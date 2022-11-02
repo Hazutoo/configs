@@ -1,6 +1,6 @@
 font pango:monospace 8
 
-# screenshot
+# shortcuts
 bindsym Mod1+Shift+s exec flameshot gui
 bindsym Mod1+Shift+Return exec google-chrome
 
