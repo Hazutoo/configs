@@ -1,8 +1,15 @@
 font pango:monospace 8
 
-exec --no-startup-id nitrogen
+# screenshot
+bindsym Mod1+Shift+s exec flameshot gui
+bindsym Mod1+Shift+Return exec google-chrome
+
+# autostart
+exec --no-startup-id flameshot
+exec --no-startup-id feh
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec feh --bg-scale /home/jarek/Download/wp.png
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
